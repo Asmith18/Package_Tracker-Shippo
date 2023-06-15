@@ -12,6 +12,12 @@
 		C2761DE12A3B9A570004B904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2761DDF2A3B9A570004B904 /* Main.storyboard */; };
 		C2761DE32A3B9A580004B904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2761DE22A3B9A580004B904 /* Assets.xcassets */; };
 		C2761DE62A3B9A580004B904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2761DE42A3B9A580004B904 /* LaunchScreen.storyboard */; };
+		C2761DF22A3BACBA0004B904 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2761DF12A3BACBA0004B904 /* OrdersViewController.swift */; };
+		C2761DF52A3BAD660004B904 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2761DF42A3BAD660004B904 /* OrdersTableViewCell.swift */; };
+		C2761DF92A3BB1400004B904 /* Add New Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2761DF82A3BB1400004B904 /* Add New Order.storyboard */; };
+		C2761DFB2A3BB31B0004B904 /* AddNewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2761DFA2A3BB31B0004B904 /* AddNewOrderViewController.swift */; };
+		C2761DFE2A3BB3970004B904 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2761DFD2A3BB3970004B904 /* Profile.storyboard */; };
+		C2761E002A3BB3C80004B904 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2761DFF2A3BB3C80004B904 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C2761DE22A3B9A580004B904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2761DE52A3B9A580004B904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2761DE72A3B9A580004B904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2761DF12A3BACBA0004B904 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		C2761DF42A3BAD660004B904 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		C2761DF82A3BB1400004B904 /* Add New Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Add New Order.storyboard"; sourceTree = "<group>"; };
+		C2761DFA2A3BB31B0004B904 /* AddNewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewOrderViewController.swift; sourceTree = "<group>"; };
+		C2761DFD2A3BB3970004B904 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C2761DFF2A3BB3C80004B904 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,8 @@
 		C2761DD82A3B9A570004B904 /* Package_Tracker Shippo */ = {
 			isa = PBXGroup;
 			children = (
-				C2761DDF2A3B9A570004B904 /* Main.storyboard */,
+				C2761DF32A3BAD010004B904 /* Networking */,
+				C2761DF72A3BB12A0004B904 /* Main */,
 				C2761DED2A3B9A700004B904 /* Resources */,
 			);
 			path = "Package_Tracker Shippo";
@@ -70,6 +83,51 @@
 				C2761DE72A3B9A580004B904 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2761DF02A3BAC790004B904 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				C2761DDF2A3B9A570004B904 /* Main.storyboard */,
+				C2761DF12A3BACBA0004B904 /* OrdersViewController.swift */,
+				C2761DF42A3BAD660004B904 /* OrdersTableViewCell.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		C2761DF32A3BAD010004B904 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C2761DF62A3BB10E0004B904 /* Add Order */ = {
+			isa = PBXGroup;
+			children = (
+				C2761DF82A3BB1400004B904 /* Add New Order.storyboard */,
+				C2761DFA2A3BB31B0004B904 /* AddNewOrderViewController.swift */,
+			);
+			path = "Add Order";
+			sourceTree = "<group>";
+		};
+		C2761DF72A3BB12A0004B904 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C2761DF02A3BAC790004B904 /* Orders */,
+				C2761DF62A3BB10E0004B904 /* Add Order */,
+				C2761DFC2A3BB3690004B904 /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C2761DFC2A3BB3690004B904 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C2761DFD2A3BB3970004B904 /* Profile.storyboard */,
+				C2761DFF2A3BB3C80004B904 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +190,8 @@
 			files = (
 				C2761DE62A3B9A580004B904 /* LaunchScreen.storyboard in Resources */,
 				C2761DE32A3B9A580004B904 /* Assets.xcassets in Resources */,
+				C2761DFE2A3BB3970004B904 /* Profile.storyboard in Resources */,
+				C2761DF92A3BB1400004B904 /* Add New Order.storyboard in Resources */,
 				C2761DE12A3B9A570004B904 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2761E002A3BB3C80004B904 /* ProfileViewController.swift in Sources */,
 				C2761DDA2A3B9A570004B904 /* AppDelegate.swift in Sources */,
+				C2761DF22A3BACBA0004B904 /* OrdersViewController.swift in Sources */,
+				C2761DF52A3BAD660004B904 /* OrdersTableViewCell.swift in Sources */,
+				C2761DFB2A3BB31B0004B904 /* AddNewOrderViewController.swift in Sources */,
 				C2761DDC2A3B9A570004B904 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
